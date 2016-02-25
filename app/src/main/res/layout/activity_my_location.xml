@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+
+        <fragment
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class ="com.google.android.gms.maps.MapFragment"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:background="@drawable/casa_logo_android"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnHome" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/applicationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=""
+                android:textSize="45sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="7"
+        android:background="#a03907"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/distanceText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="you are"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/distanceInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="---"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="80sp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/distanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="---"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="5"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:src="@drawable/left"
+                android:id="@+id/imageViewLeft"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/bearingInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="home"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="25sp"
+                android:layout_weight="3"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:src="@drawable/right"
+                android:id="@+id/imageViewRight"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

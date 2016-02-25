@@ -1,0 +1,324 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/casa3" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/logoutBt"
+            android:background="@drawable/door" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/aboutbBt"
+            android:background="@drawable/casa_logo_android"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/menuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="welcome"
+                android:textColor="#ffffffff"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/menuName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#0296a1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text=""
+                        android:background="#ffffff"
+                        android:id="@+id/btnSummary" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/resumoTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="summary"
+                            android:textColor="#0296a1"
+                            android:textSize="25sp"
+                            />
+                    </LinearLayout>
+
+
+
+                    <!-- <ImageView
+                         android:id="@+id/imageViewResumo"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="5dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/resumo" /> -->
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+
+
+                    >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text=""
+                        android:background="#ffffff"
+                        android:id="@+id/btnGps" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout17"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/gpsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="where am i"
+                            android:textColor="#0296a1"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <!-- <ImageView
+                         android:id="@+id/imageViewResumo"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="5dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/resumo" /> -->
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+
+                    >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text=""
+                        android:background="#ffffff"
+                        android:id="@+id/btnSensors" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/opcoesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="sensors"
+                            android:textColor="#0296a1"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <!-- <ImageView
+                         android:id="@+id/imageViewResumo"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="5dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/resumo" /> -->
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+
+                    >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text=""
+                        android:background="#ffffff"
+                        android:id="@+id/btnAbout" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/sobreTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="about"
+                            android:textColor="#0296a1"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <!-- <ImageView
+                         android:id="@+id/imageViewResumo"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="5dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/resumo" /> -->
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

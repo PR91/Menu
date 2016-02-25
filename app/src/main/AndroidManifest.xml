@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pedrobrito.menu" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".summary"
+            android:label="@string/title_activity_summary"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".myLocation"
+            android:label="@string/title_activity_my_location"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".sensorInfo"
+            android:label="@string/title_activity_sensor_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".loginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC6HhZv5TKcQrTBRB9_ANLQTzJNXC6Vv1k" />
+    </application>
+
+</manifest>
